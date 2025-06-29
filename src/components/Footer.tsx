@@ -25,9 +25,9 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {[
-                { icon: Linkedin, href: '#' },
-                { icon: Twitter, href: '#' },
-                { icon: Github, href: '#' },
+                { icon: Linkedin, href: 'https://www.linkedin.com/company/archetype-dynamics' },
+                { icon: Twitter, href: 'https://x.com/ArcheDynamics' },
+                { icon: Github, href: 'https://github.com/Archetype-Dynamics' },
                 { icon: Mail, href: '#' }
               ].map((social, index) => (
                 <a
