@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Twitter, Github, Mail, Database } from 'lucide-react';
+import { Linkedin, Twitter, Github, Database } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -20,7 +20,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-              Three programmers building cool database stuff. Currently working on OstrichDB - 
+              We're some guys building cool shit. Currently working on OstrichDB - 
               a database you can actually talk to like a human.
             </p>
             <div className="flex space-x-4">
@@ -28,7 +28,6 @@ const Footer = () => {
                 { icon: Linkedin, href: 'https://www.linkedin.com/company/archetype-dynamics' },
                 { icon: Twitter, href: 'https://x.com/ArcheDynamics' },
                 { icon: Github, href: 'https://github.com/Archetype-Dynamics' },
-                { icon: Mail, href: '#' }
               ].map((social, index) => (
                 <a
                   key={index}
@@ -47,8 +46,6 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { name: 'OstrichDB', href: '#product' },
-                { name: 'Try It Out', href: '#contact' },
-                { name: 'Our Story', href: '#about' }
               ].map((link) => (
                 <li key={link.name}>
                   <a
@@ -71,7 +68,6 @@ const Footer = () => {
                 { name: 'About Us', href: '#about' },
                 { name: 'The Team', href: '#team' },
                 { name: 'Contact', href: '#contact' },
-                { name: 'Say Hi', href: '#contact' }
               ].map((link) => (
                 <li key={link.name}>
                   <a

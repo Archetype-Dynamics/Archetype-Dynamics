@@ -88,7 +88,7 @@ const Solutions = () => {
             {
               icon: MessageSquare,
               title: 'Natural Language Processing',
-              description: 'Revolutionary AI-powered interface that understands plain English queries, making databases accessible to everyone.'
+              description: 'AI-powered interface that understands plain English queries, making databases accessible to everyone.'
             },
             {
               icon: Shield,
@@ -124,25 +124,6 @@ const Solutions = () => {
               <p className="text-gray-300 leading-relaxed">{feature.description}</p>
             </div>
           ))}
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-gray-800 to-slate-800 dark:from-gray-800 dark:to-gray-700 rounded-3xl p-8 md:p-12 border border-gray-600/50">
-            <h3 className="text-3xl font-bold text-white mb-4">The Future of Database Technology</h3>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              OstrichDB represents our vision for making database technology accessible to everyone. 
-              Currently in development, we're building something truly revolutionary.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105">
-                Request Early Access
-              </button>
-              <button className="border-2 border-gray-500 text-gray-300 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-700 hover:border-gray-400 transition-all duration-300">
-                Learn More
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>

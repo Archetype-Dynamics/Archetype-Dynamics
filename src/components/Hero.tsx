@@ -30,10 +30,7 @@ const Hero = () => {
           </span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Three programmers who decided to build a database that doesn't suck. 
-          This just happens to be our first project.
-        </p>
+        
 
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-12 max-w-2xl mx-auto border border-white/20">
           <div className="flex items-center justify-center space-x-3 mb-3">
@@ -41,7 +38,10 @@ const Hero = () => {
             <h3 className="text-2xl font-bold text-white">OstrichDB</h3>
           </div>
           <p className="text-gray-300 text-lg">
-            A database you can talk to in plain English (seriously!)
+            Currently In Development
+          </p>
+          <p className="text-gray-400 mt-2">
+            A database you can talk to in plain English
           </p>
         </div>
 
@@ -54,30 +54,6 @@ const Hero = () => {
           <button className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm">
             Say Hi
           </button>
-        </div>
-
-        {/* Feature Icons */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {[
-            { icon: Database, title: 'Simple', desc: 'No more SQL headaches' },
-            { icon: Zap, title: 'Fast', desc: 'Built for speed' },
-            { icon: Target, title: 'Smart', desc: 'Actually understands you' }
-          ].map((item, index) => (
-            <div key={index} className="group text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-4 group-hover:bg-orange-500/20 transition-all duration-300 backdrop-blur-sm">
-                <item.icon className="text-white group-hover:text-orange-400 transition-colors" size={24} />
-              </div>
-              <h3 className="text-white font-semibold text-lg mb-2">{item.title}</h3>
-              <p className="text-gray-400">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>
