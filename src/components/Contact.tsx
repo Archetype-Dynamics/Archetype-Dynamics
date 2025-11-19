@@ -16,7 +16,7 @@ const Contact = () => {
             </span>
           </h2>
           <p className="text-xl text-slate-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Curious about OstrichDB? Want to collaborate? Just want to say hi?
+            Have a project in mind? Want to collaborate? Just want to say hi?
             Drop us a line - we actually read our emails.
           </p>
         </div>
@@ -27,14 +27,14 @@ const Contact = () => {
               {
                 icon: Mail,
                 title: "Email Us",
-                content: "admin@archetypedynamics.com",
+                content: "admin@archetyp-dynamics.com",
                 subtitle: "We usually respond pretty quickly",
               },
               {
                 icon: Users,
-                title: "Try OstrichDB",
-                content: "Visit ostrichdb.com",
-                subtitle: "Sign up and start building!",
+                title: "Book a Call",
+                content: "cal.com/archetype-dynamics",
+                subtitle: "Let's discuss your project",
               },
               {
                 icon: MapPin,
@@ -68,7 +68,7 @@ const Contact = () => {
               Ready to get in touch? Just shoot us an email directly.
             </p>
             <a
-              href="mailto:admin@archetypedynamics.com?subject=Hello from your website!"
+              href="mailto:admin@archetyp-dynamics.com?subject=Hello from your website!"
               className="inline-flex items-center space-x-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 px-8 rounded-xl font-semibold text-lg hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105"
             >
               <Mail size={24} />

@@ -22,7 +22,7 @@ const Footer = () => {
               },
               { icon: Twitter, href: "https://x.com/ArcheDynamics" },
               { icon: Github, href: "https://github.com/Archetype-Dynamics" },
-              { icon: Mail, href: "mailto:admin@archetypedynamics.com" },
+              { icon: Mail, href: "mailto:admin@archetyp-dynamics.com" },
             ].map((social, index) => (
               <a
                 key={index}

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Linkedin, Zap, Code, Users } from "lucide-react";
+import { Zap, Code, Users } from "lucide-react";
 
 const features = [
   {
@@ -30,7 +30,6 @@ const founders = [
     description:
       "Driving the strategic vision and technical architecture of Archetype Dynamics. Marshall combines leadership with deep engineering expertise to build software that matters.",
     avatar: "MB",
-    linkedin: "https://www.linkedin.com/in/marshallbcodes/",
   },
   {
     name: 'Gregory "Kasi" Reeves',
@@ -38,7 +37,6 @@ const founders = [
     description:
       "Leveraging extensive industry experience to guide technical strategy. Kasi ensures our solutions are robust, scalable, and grounded in engineering best practices.",
     avatar: "GR",
-    linkedin: "https://www.linkedin.com/in/kasi-reeves/",
   },
   {
     name: "Isaac Cobb",
@@ -46,15 +44,10 @@ const founders = [
     description:
       "Leading product strategy with a focus on user-centric design and technical precision. Isaac ensures every product we build is intuitive, logical, and impactful.",
     avatar: "IC",
-    linkedin: "https://www.linkedin.com/in/isaac-cobb-06b78827a/",
   },
 ];
 
 const Team = () => {
-  const handleLinkedInClick = (linkedinUrl: string) => {
-    window.open(linkedinUrl, "_blank", "noopener,noreferrer");
-  };
-
   return (
     <section
       id="team"
@@ -148,7 +141,6 @@ const Team = () => {
                 <div className="w-24 h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold group-hover:scale-110 transition-transform duration-300 shadow-xl shadow-orange-500/20">
                   {founder.avatar}
                 </div>
-                <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-4 border-white dark:border-slate-900 flex items-center justify-center"></div>
               </div>
 
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
@@ -158,22 +150,9 @@ const Team = () => {
                 {founder.role}
               </p>
 
-              <p className="text-slate-600 dark:text-gray-400 leading-relaxed mb-8 min-h-[80px]">
+              <p className="text-slate-600 dark:text-gray-400 leading-relaxed min-h-[80px]">
                 {founder.description}
               </p>
-
-              <div className="flex justify-center">
-                <button
-                  onClick={() => handleLinkedInClick(founder.linkedin)}
-                  className="p-3 bg-slate-100 dark:bg-white/5 rounded-full hover:bg-orange-500 hover:text-white text-slate-400 dark:text-gray-400 transition-all duration-300 group/btn border border-slate-200 dark:border-white/10 hover:border-orange-500"
-                  aria-label={`Visit ${founder.name}'s LinkedIn profile`}
-                >
-                  <Linkedin
-                    size={20}
-                    className="group-hover/btn:scale-110 transition-transform"
-                  />
-                </button>
-              </div>
             </motion.div>
           ))}
         </div>

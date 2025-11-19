@@ -34,9 +34,14 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="btn-primary flex items-center space-x-2 group text-lg px-8 py-4">
+            <a
+              href="https://cal.com/archetype-dynamics"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary flex items-center space-x-2 group text-lg px-8 py-4"
+            >
               <span>Book a Consultation</span>
-            </button>
+            </a>
           </div>
         </motion.div>
 
