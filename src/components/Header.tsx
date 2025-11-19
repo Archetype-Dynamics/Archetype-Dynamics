@@ -74,9 +74,14 @@ const Header = () => {
               {isDark ? <Sun size={20} /> : <Moon size={20} />}
             </button>
 
-            <button className="px-5 py-2 rounded-full bg-slate-900 dark:bg-white/10 text-white hover:bg-slate-800 dark:hover:bg-white/20 text-sm font-medium transition-all border border-transparent dark:border-white/10">
+            <a
+              href="https://cal.com/archetype-dynamics"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 rounded-full bg-slate-900 dark:bg-white/10 text-white hover:bg-slate-800 dark:hover:bg-white/20 text-sm font-medium transition-all border border-transparent dark:border-white/10"
+            >
               Book Call
-            </button>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
