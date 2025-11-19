@@ -1,81 +1,108 @@
-import React from 'react';
-import { Database, MessageSquare, Shield, Globe, Cpu, BarChart3 } from 'lucide-react';
+import React from "react";
+import {
+  Database,
+  MessageSquare,
+  Shield,
+  Globe,
+  Cpu,
+  BarChart3,
+} from "lucide-react";
 
 const Solutions = () => {
   return (
-    <section id="product" className="py-24 bg-slate-900 dark:bg-gray-900 transition-colors duration-300">
+    <section
+      id="product"
+      className="py-24 bg-white dark:bg-slate-900 transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
             Our Flagship Product
-            <span className="block bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-orange-500 to-orange-700 dark:from-orange-400 dark:to-orange-600 bg-clip-text text-transparent">
               OstrichDB
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We're building the world's first natural language database - a revolutionary approach 
-            to data management that makes databases accessible to everyone.
+          <p className="text-xl text-slate-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            We're building the world's first natural language database - a
+            revolutionary approach to data management that makes databases
+            accessible to everyone.
           </p>
         </div>
 
         {/* Main Product Showcase */}
-        <div className="bg-gradient-to-br from-gray-800 to-slate-800 dark:from-gray-800 dark:to-gray-700 rounded-3xl p-8 md:p-12 mb-16 border border-gray-600/50">
+        <div className="bg-slate-50 dark:bg-slate-800/50 rounded-3xl p-8 md:p-12 mb-16 border border-slate-200 dark:border-white/10 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-500/20">
                   <Database className="text-white" size={28} />
                 </div>
                 <div>
-                  <h3 className="text-4xl font-bold text-white">OstrichDB</h3>
-                  <p className="text-orange-400 text-lg">Natural Language Database</p>
+                  <h3 className="text-4xl font-bold text-slate-900 dark:text-white">
+                    OstrichDB
+                  </h3>
+                  <p className="text-orange-600 dark:text-orange-400 text-lg font-medium">
+                    Natural Language Database
+                  </p>
                 </div>
               </div>
-              
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                A groundbreaking database built from the ground up with natural language processing, 
-                hierarchical NoSQL/NoJSON architecture, and enterprise-grade security. Built in Odin 
-                for maximum performance and reliability.
+
+              <p className="text-xl text-slate-600 dark:text-gray-300 mb-8 leading-relaxed">
+                A groundbreaking database built from the ground up with natural
+                language processing, hierarchical NoSQL/NoJSON architecture, and
+                enterprise-grade security. Built in Odin for maximum performance
+                and reliability.
               </p>
 
               <div className="space-y-4 mb-8">
                 {[
-                  'Query using plain English - no SQL required',
-                  'Hierarchical architecture: Collections → Clusters → Records',
-                  'Built in Odin programming language for performance',
-                  'Visual Cluster Editor for intuitive data management',
-                  'Encrypted collections ensure data security',
-                  'Web application with user-friendly interface'
+                  "Query using plain English - no SQL required",
+                  "Hierarchical architecture: Collections → Clusters → Records",
+                  "Built in Odin programming language for performance",
+                  "Visual Cluster Editor for intuitive data management",
+                  "Encrypted collections ensure data security",
+                  "Web application with user-friendly interface",
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                    <span className="text-gray-300">{feature}</span>
+                    <span className="text-slate-700 dark:text-gray-300">
+                      {feature}
+                    </span>
                   </div>
                 ))}
               </div>
 
               <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105">
-                <a href="https://ostrichdb.com" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://ostrichdb.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Learn More About OstrichDB
                 </a>
               </button>
-
             </div>
 
             <div className="relative">
-              <div className="bg-gray-900 rounded-2xl p-6 border border-gray-600">
+              <div className="bg-slate-900 rounded-2xl p-6 border border-slate-700 shadow-2xl">
                 <div className="flex items-center space-x-2 mb-4">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                 </div>
                 <div className="font-mono text-sm text-gray-300 space-y-2">
-                  <div className="text-orange-400">💬 "Show me customers from last month"</div>
-                  <div className="text-green-400">✓ Natural language processed</div>
+                  <div className="text-orange-400">
+                    💬 "Show me customers from last month"
+                  </div>
+                  <div className="text-green-400">
+                    ✓ Natural language processed
+                  </div>
                   <div className="text-gray-400">Collection: customers</div>
                   <div className="text-gray-400">Cluster: recent_signups</div>
                   <div className="text-gray-400">Records: 1,247 found</div>
-                  <div className="text-green-400">Query executed in 0.003ms</div>
+                  <div className="text-green-400">
+                    Query executed in 0.003ms
+                  </div>
                 </div>
               </div>
             </div>
@@ -87,41 +114,54 @@ const Solutions = () => {
           {[
             {
               icon: MessageSquare,
-              title: 'Natural Language Processing',
-              description: 'AI-powered interface that understands plain English queries, making databases accessible to everyone.'
+              title: "Natural Language Processing",
+              description:
+                "AI-powered interface that understands plain English queries, making databases accessible to everyone.",
             },
             {
               icon: Shield,
-              title: 'Security First',
-              description: 'Built-in encryption for all collections ensures your data remains secure and private by default.'
+              title: "Security First",
+              description:
+                "Built-in encryption for all collections ensures your data remains secure and private by default.",
             },
             {
               icon: Globe,
-              title: 'Built in Odin',
-              description: 'Engineered using the Odin programming language for exceptional performance and system reliability.'
+              title: "Built in Odin",
+              description:
+                "Engineered using the Odin programming language for exceptional performance and system reliability.",
             },
             {
               icon: Cpu,
-              title: 'Hierarchical Architecture',
-              description: 'Innovative NoSQL/NoJSON structure with Collections, Clusters, and Records for optimal data organization.'
+              title: "Hierarchical Architecture",
+              description:
+                "Innovative NoSQL/NoJSON structure with Collections, Clusters, and Records for optimal data organization.",
             },
             {
               icon: BarChart3,
-              title: 'Visual Data Management',
-              description: 'Intuitive Cluster Editor allows users to visually manage and modify their data without complex commands.'
+              title: "Visual Data Management",
+              description:
+                "Intuitive Cluster Editor allows users to visually manage and modify their data without complex commands.",
             },
             {
               icon: Database,
-              title: 'Web Application',
-              description: 'Complete web-based interface with robust API layer for seamless data manipulation and management.'
-            }
+              title: "Web Application",
+              description:
+                "Complete web-based interface with robust API layer for seamless data manipulation and management.",
+            },
           ].map((feature, index) => (
-            <div key={index} className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300 hover:transform hover:-translate-y-2">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div
+              key={index}
+              className="glass-card p-6 rounded-2xl hover:border-orange-500/30 transition-all duration-300 hover:transform hover:-translate-y-2 group"
+            >
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/20">
                 <feature.icon className="text-white" size={20} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-              <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                {feature.title}
+              </h3>
+              <p className="text-slate-600 dark:text-gray-400 leading-relaxed">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
